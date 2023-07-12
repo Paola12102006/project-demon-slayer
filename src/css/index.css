@@ -1,0 +1,103 @@
+body {
+    background-color: #000000;
+}
+
+body::before {
+    content: '';
+    background-image: url(../imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.selecao-de-personagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+    width: 100%;
+    padding: 0 50px;
+}
+
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #F01C25;
+    width: 100%;
+    text-align: center;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding: 20px 10px;
+}
+
+.lista-de-personagens .personagem {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+.lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #f01c2783;
+}
+
+.personagem-selecionado {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+.personagem-selecionado .personagem-grande {
+    height: 320px;
+}
+
+.personagem-selecionado .nome-personagem {
+    border-bottom: 2px solid #F01C25;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    max-height: 70px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    box-shadow: 5px 5px 10px #2f0e0e;
+}

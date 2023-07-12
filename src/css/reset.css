@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: #ddd;
+    font-family: 'Oxanium', cursive;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #F01C25;
+    border-radius: 10px;
+    border: 3px solid #000;
+}
